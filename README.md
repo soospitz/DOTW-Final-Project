@@ -1,5 +1,5 @@
 # DOTW-Final-Project
 Drawing on the Web - Final Project
 
-##OUTLINE
+## OUTLINE
 For my final project, I want to create a New York City-themed interactive animations. The three drawings will be aesthetically and conceptually related to New York City and each of the drawings will be representing different neighborhoods. The main page will have animations of blinking lights, moving cars, and skyscrapers. I will add interactivity where you have to find a clickable animated object which will bring you to individual drawings. I want my general aesthetic to be a dark background with bright colored outlined drawings like neon signs. My drawings will mostly be SVG created with illustrators and HTML Canvas. The three neighborhoods will probably be the neighborhoods that I am in the most (NYU area, Midtown, and Downtown) or three neighborhoods I have lived in (Tribeca, Murray Hill, and Midtown West). I want my final project to be a virtual New York City experience for the users so I am thinking to add user interactivity in each of the drawings and a lot of animations and transformations such as transformation, changing colors, and animate when user hover and click. Also, I do not want to add any texts in my work but describe in drawings and animation only. 

@@ -1,9 +1,50 @@
 html,
 body {
+	background-image: url(media/sky8.jpeg);
+    width: 100%;
     height: 100%;
-    box-sizing: border-box;
     background-color: #111;
 }
+
+
+.city {
+
+	top: 200px;
+	height: 450px;
+	width: 500%;
+	background-image: url(media/skyline.svg);
+	position: relative;
+	bottom: 200px;
+	right: 0;
+	left: 0;
+	display: block;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: move 10s linear infinite;
+}
+
+
+.taxi {
+	position: absolute;
+	z-index: 100;
+	display: block;
+	margin-top: 0px;
+	margin-left: 450px;
+}
+
+.moon {
+	position: absolute;
+	margin-left: 750px;
+	top: 25px;
+	height: 200px;
+}
+
+@keyframes move {
+
+	100% {
+		transform: translateX(-1400px);
+	}
+
 
 #open {
     padding-left: 20px;

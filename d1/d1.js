@@ -18,3 +18,13 @@ $("#open").hover(function(){
     });
 });
 
+$(document).ready(function(){
+      $("#on").click(function(){
+          $("body").addClass("night");
+          $("body").removeClass("day");
+      });
+      $("#off").click(function(){
+          $("body").removeClass("night");
+          $("body").addClass("day");
+      });
+  });

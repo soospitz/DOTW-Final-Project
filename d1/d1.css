@@ -4,16 +4,17 @@ body {
 }
 
 .light {
-	padding-left: 40px;
-	padding-bottom: : 40px;
+	padding-left: 50px;
+	padding-bottom: 80px;
 }
 
 .day .radiocity {
-	height: 250px;
+	height: 230px;
 	animation-name: radiocityA;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    padding: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
 }
 
 @keyframes radiocityA {
@@ -28,8 +29,9 @@ body {
 }
 
 .night .radiocity {
-	padding: 10px;
-	height: 250px;
+	padding-top: 20px;
+    padding-left: 40px;
+	height: 230px;
 	opacity: 10%;
 	filter: saturate(10%);
 }
@@ -37,7 +39,7 @@ body {
 
 .day .open {
     padding-left: 50px;
-    margin-top: -200px;
+    margin-bottom: 50px;
     height: 170px;
     animation-name: openA;
     animation-duration: 1s;
@@ -60,7 +62,7 @@ body {
 
 .night .open {
 	padding-left: 50px;
-    margin-top: -200px;
+    margin-bottom: 50px;
     height: 170px;
 	opacity: 20%;
 	filter: saturate(10%);
@@ -69,11 +71,13 @@ body {
 .day .pepsicola {
 	height: 200px;
 	padding:20px;
+	margin-left: 20px;
 }
 
 .night .pepsicola {
 	height: 200px;
 	padding:20px;
+	margin-left: 20px;
 	opacity:20%;
 	filter: saturate(10%);
 }
@@ -125,7 +129,8 @@ body {
 .day .cafe {
 	height: 200px;
 	position: absolute;
-	margin-top: -220px;
+	margin-top: -250px;
+	margin-left: 70px;
 	animation-name: spin;
 	animation-duration: 5000ms;
 	animation-iteration-count: infinite;
@@ -134,14 +139,17 @@ body {
 .night .cafe {
 	height: 200px;
 	position: absolute;
-	margin-top: -220px;
+	margin-top: -250px;
+	margin-left: 70px;
 	opacity: 20%;
 	filter: saturate(10%);
 }
 
 .day .cafe:hover {
-	animation-play-state: paused
+	animation-play-state: paused;
+	filter: saturate(500%);
 }
+
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -152,14 +160,14 @@ body {
 }
 
 .day .parking {
-	margin-left: 270px;
+	margin-left: 320px;
     height: 450px;
     position: absolute;
     margin-top: -450px;
 }
 
 .night .parking {
-	margin-left: 270px;
+	margin-left: 320px;
     height: 450px;
     position: absolute;
     margin-top: -450px;
@@ -167,7 +175,38 @@ body {
     filter: saturate(10%);
 }
 
+.day .nypd {
+	transform: rotate(90deg);
+	height: 51px;
+	margin-left: 240px;
+	margin-top: 150px;
+	position: absolute;
+	animation-name: nyp;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
 
+.day .nypd:hover {
+	filter: saturate(500%);
+}
+
+.night .nypd {
+	transform: rotate(90deg);
+	height: 51px;
+	margin-left: 240px;
+	margin-top: 150px;
+	position: absolute;
+	opacity:10%;
+    filter: saturate(10%);
+}
+
+@keyframes nyp {
+  0%   {top:220px;}
+  20%  {top:80px;}
+  55%  {top:80px;}
+  70%  {top:220px;}
+  100% {top:220px;}
+}
 
 
 body.day #on {
